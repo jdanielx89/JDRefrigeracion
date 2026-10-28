@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Refrigeración - Expertos en Aires Acondicionados en Santa Marta</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cobalt: '#0B2545',
+                        cobaltDark: '#051329',
+                        glacial: '#00B4D8',
+                        glacialLight: '#90E0EF',
+                        metallic: '#E0E1DD'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(0, 180, 216, 0.15), transparent 50%),
+                        linear-gradient(135deg, #051329 0%, #0B2545 100%);
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 25px rgba(0, 180, 216, 0.25);
+        }
+        .glass-panel {
+            background: rgba(11, 37, 69, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(224, 225, 221, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-glacial selection:text-slate-950">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 glass-panel border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- LOGO -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-glacial to-cobalt p-0.5 shadow-lg shadow-glacial/20 group-hover:scale-105 transition duration-300">
+                    <div class="w-full h-full bg-cobaltDark rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-snowflake text-glacial text-2xl"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-wider text-white">JD <span class="text-glacial">REFRIGERACIÓN</span></span>
+                    <p class="text-[10px] tracking-widest text-slate-400 font-semibold uppercase">Santa Marta • Colombia</p>
+                </div>
+            </a>
+
+            <!-- NAV CONTACT -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="tel:+573046822818" class="text-slate-300 hover:text-glacial transition font-medium flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-phone text-glacial"></i> +57 304 6822818
+                </a>
+                <a href="https://wa.me/573046822818?text=Hola%20JD%20Refrigeraci%C3%B3n,%20necesito%20un%20servicio%20para%20mi%20aire%20acondicionado" target="_blank" 
+                   class="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-emerald-500/20 transition duration-300 flex items-center gap-2 transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Directo
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-gradient py-20 lg:py-28 px-4 relative overflow-hidden border-b border-slate-800">
+        <div class="max-w-5xl mx-auto text-center space-y-8 relative z-10">
+            <div class="inline-flex items-center gap-2 bg-glacial/10 border border-glacial/30 text-glacialLight px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide shadow-sm">
+                <i class="fa-solid fa-shield-halved text-glacial"></i> Servicio Técnico Garantizado en Santa Marta
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white leading-tight tracking-tight">
+                Mantenimiento, Reparación e Instalación de <span class="text-transparent bg-clip-text bg-gradient-to-r from-glacial via-glacialLight to-white">Aires Acondicionados</span>
+            </h1>
+            
+            <p class="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+                Especialistas en climatización residencial y comercial. Atendemos emergencias, goteos, falta de frío y mantenimientos preventivos con <strong class="text-white font-semibold">garantía escrita</strong>.
+            </p>
+
+            <!-- CALL TO ACTION BUTTONS -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="https://wa.me/573046822818?text=Hola!%20Quiero%20solicitar%20un%20mantenimiento%20para%20mi%20aire%20acondicionado" target="_blank"
+                   class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl shadow-emerald-500/25 transition duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> Solicitar Servicio por WhatsApp
+                </a>
+                <a href="tel:+573046822818"
+                   class="w-full sm:w-auto glass-panel hover:bg-slate-800 text-white border border-slate-700 font-bold text-lg px-8 py-4 rounded-xl transition duration-300 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-phone text-glacial"></i> Llamar +57 304 6822818
+                </a>
+            </div>
+
+            <!-- TRUST BADGES -->
+            <div class="pt-10 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto border-t border-slate-800/80 text-left">
+                <div class="flex items-center gap-3 p-3">
+                    <i class="fa-solid fa-circle-check text-glacial text-xl"></i>
+                    <span class="text-xs text-slate-300 font-medium">Hidrolavado a Presión</span>
+                </div>
+                <div class="flex items-center gap-3 p-3">
+                    <i class="fa-solid fa-circle-check text-glacial text-xl"></i>
+                    <span class="text-xs text-slate-300 font-medium">Garantía por Escrito</span>
+                </div>
+                <div class="flex items-center gap-3 p-3">
+                    <i class="fa-solid fa-circle-check text-glacial text-xl"></i>
+                    <span class="text-xs text-slate-300 font-medium">Técnicos Expertos</span>
+                </div>
+                <div class="flex items-center gap-3 p-3">
+                    <i class="fa-solid fa-circle-check text-glacial text-xl"></i>
+                    <span class="text-xs text-slate-300 font-medium">Atención Rápida</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVICIOS -->
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center space-y-3 mb-16">
+            <span class="text-glacial text-xs font-bold tracking-widest uppercase">Soluciones de Climatización</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Nuestros Servicios Destacados</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">Mantenemos tus espacios limpios y frescos en Santa Marta</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="glass-panel p-8 rounded-2xl border border-slate-800 card-glow transition duration-300 relative group">
+                <div class="w-14 h-14 bg-glacial/10 rounded-xl flex items-center justify-center text-glacial text-2xl mb-6 group-hover:bg-glacial group-hover:text-slate-950 transition duration-300">
+                    <i class="fa-solid fa-shower"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Mantenimiento e Hidrolavado</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Limpieza técnica profunda con hidrolavadora de alta presión. Eliminamos polvo acumulado, hongo y obstrucciones en la turbina y el serpentín para garantizar aire puro y optimizar el consumo de energía.
+                </p>
+                <a href="https://wa.me/573046822818?text=Hola,%20requiero%20mantenimiento%20preventivo%20para%20mi%20aire" target="_blank" 
+                   class="text-glacial text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    Cotizar Mantenimiento <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="glass-panel p-8 rounded-2xl border border-slate-800 card-glow transition duration-300 relative group">
+                <div class="w-14 h-14 bg-glacial/10 rounded-xl flex items-center justify-center text-glacial text-2xl mb-6 group-hover:bg-glacial group-hover:text-slate-950 transition duration-300">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Diagnóstico y Reparación</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Diagnóstico preciso y reparación de fallas eléctricas, goteos de agua en la unidad interior, ruidos inusuales, problemas en compresor y corrección de fugas de refrigerante.
+                </p>
+                <a href="https://wa.me/573046822818?text=Hola,%20mi%20aire%20acondicionado%20presenta%20una%20falla%20y%20requiero%20reparaci%C3%B3n" target="_blank" 
+                   class="text-glacial text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    Solicitar Diagnóstico <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="glass-panel p-8 rounded-2xl border border-slate-800 card-glow transition duration-300 relative group">
+                <div class="w-14 h-14 bg-glacial/10 rounded-xl flex items-center justify-center text-glacial text-2xl mb-6 group-hover:bg-glacial group-hover:text-slate-950 transition duration-300">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Instalación Profesional</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Instalación de aires acondicionados minisplit y centrales. Trabajo limpio, nivelado, con proceso de vacío técnico garantizado para proteger la vida útil del motor y mantener el rendimiento de fábrica.
+                </p>
+                <a href="https://wa.me/573046822818?text=Hola,%20deseo%20instalar%20un%20aire%20acondicionado" target="_blank" 
+                   class="text-glacial text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    Agendar Instalación <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA DE BTU -->
+    <section class="py-16 px-4 bg-slate-900/60 border-y border-slate-800">
+        <div class="max-w-4xl mx-auto glass-panel p-8 sm:p-12 rounded-3xl border border-slate-700/50 shadow-2xl">
+            <div class="text-center mb-10">
+                <span class="bg-glacial/10 text-glacial text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Herramienta Interactiva</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-3">Calculadora de Capacidad (BTU)</h2>
+                <p class="text-slate-400 text-sm mt-2">Calcula la potencia adecuada que necesita tu espacio en el clima de Santa Marta</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Ancho de la habitación (metros):</label>
+                        <input type="number" id="ancho" placeholder="Ej: 3.5" step="0.1" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-glacial transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Largo de la habitación (metros):</label>
+                        <input type="number" id="largo" placeholder="Ej: 4.0" step="0.1" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-glacial transition">
+                    </div>
+
+                    <button onclick="calcularBTU()" class="w-full bg-glacial hover:bg-cyan-400 text-slate-950 font-bold py-3.5 rounded-xl transition duration-300 shadow-lg shadow-glacial/20 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-calculator"></i> Calcular Capacidad Recomendada
+                    </button>
+                </div>
+
+                <div class="bg-slate-950/80 border border-slate-800 p-8 rounded-2xl text-center space-y-4">
+                    <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Recomendación Estimada</p>
+                    <div id="resultadoBTU" class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-glacial to-glacialLight">-- BTU</div>
+                    <p id="detalleBTU" class="text-xs text-slate-400 leading-relaxed">Ingresa las medidas en metros para obtener el resultado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO RÁPIDO -->
+    <section class="py-20 px-4 max-w-4xl mx-auto">
+        <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-slate-800 shadow-2xl">
+            <div class="text-center space-y-3 mb-10">
+                <h2 class="text-3xl font-extrabold text-white">Solicita tu Visita Técnica</h2>
+                <p class="text-slate-400 text-sm">Déjanos tu mensaje y te contactaremos de inmediato por WhatsApp</p>
+            </div>
+
+            <form id="quoteForm" onsubmit="enviarWhatsApp(event)" class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Nombre completo</label>
+                        <input type="text" id="nombre" required placeholder="Tu nombre" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-glacial transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Barrio o Sector</label>
+                        <input type="text" id="sector" required placeholder="Ej: El Rodadero, Bello Horizonte..." class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-glacial transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-2">Servicio requerido</label>
+                    <select id="servicio" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-glacial transition">
+                        <option value="Mantenimiento Preventivo">Mantenimiento Preventivo e Hidrolavado</option>
+                        <option value="Reparación por Falla o Fuga">Reparación por Falla / No Enfría / Goteo</option>
+                        <option value="Instalación de Aire Acondicionado">Instalación de Aire Acondicionado</option>
+                        <option value="Servicio Comercial o Restaurante">Servicio Comercial / Empresas</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg py-4 rounded-xl shadow-lg shadow-emerald-500/20 transition duration-300 flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar Solicitud a WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-cobaltDark py-12 border-t border-slate-800 px-4 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <p class="font-bold text-white text-lg tracking-wider">JD REFRIGERACIÓN</p>
+            <p class="text-slate-400">Santa Marta, Magdalena, Colombia • Teléfono / WhatsApp: +57 304 6822818</p>
+            <p class="text-xs text-slate-600">© 2026 JD Refrigeración. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/573046822818?text=Hola%20JD%20Refrigeraci%C3%B3n,%20necesito%20asistencia%20con%20un%20aire%20acondicionado" target="_blank"
+       class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 transition transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JAVASCRIPT DE CALCULADORA Y ENVÍO -->
+    <script>
+        function calcularBTU() {
+            const ancho = parseFloat(document.getElementById('ancho').value);
+            const largo = parseFloat(document.getElementById('largo').value);
+
+            if (!ancho || !largo || ancho <= 0 || largo <= 0) {
+                document.getElementById('resultadoBTU').innerText = "Medida inválida";
+                document.getElementById('detalleBTU').innerText = "Ingresa números válidos mayores a 0.";
+                return;
+            }
+
+            const m2 = ancho * largo;
+            let btu = "";
+            let detalle = "";
+
+            if (m2 <= 12) {
+                btu = "9,000 BTU";
+                detalle = "Ideal para habitaciones pequeñas o auxiliares (hasta 12 m²).";
+            } else if (m2 <= 18) {
+                btu = "12,000 BTU";
+                detalle = "Ideal para habitaciones principales o salas medianas (12 a 18 m²).";
+            } else if (m2 <= 25) {
+                btu = "18,000 BTU";
+                detalle = "Recomendado para espacios más amplios o salas familiares (18 a 25 m²).";
+            } else {
+                btu = "24,000+ BTU";
+                detalle = "Recomendado para locales comerciales, restaurantes o grandes salones (más de 25 m²).";
+            }
+
+            document.getElementById('resultadoBTU').innerText = btu;
+            document.getElementById('detalleBTU').innerText = `Área calculada: ${m2.toFixed(1)} m². ${detalle}`;
+        }
+
+        function enviarWhatsApp(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const sector = document.getElementById('sector').value;
+            const servicio = document.getElementById('servicio').value;
+
+            const mensaje = `Hola JD Refrigeración, mi nombre es ${nombre}. Estoy en ${sector} y solicito servicio de: ${servicio}.`;
+            const url = `https://wa.me/573046822818?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
